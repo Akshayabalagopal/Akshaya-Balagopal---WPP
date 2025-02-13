@@ -20,19 +20,6 @@ not pangram
 Explanation
 In the first test case the answer is pangram because the sentence contains all the letters.
 '''
-'''
-letters="abcdefghijklmnopqrstuvwxyz"
-s=input("Enter the sentence: ")
-for i in letters:
-    p=1
-    if i not in s.lower():
-        p=0
-
-if(p==1):
-    print("Pangram")
-else:
-    print("Not Pangram")
-'''
 def pangram(s):
     alphabets=set("abcdefghijklmnopqrstuvwxyz")
     s=set(s.lower())

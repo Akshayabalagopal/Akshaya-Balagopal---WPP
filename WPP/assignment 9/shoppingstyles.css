@@ -1,0 +1,139 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #18056d;
+    color: #f9f1f1;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.Gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.gallery-items img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Product Section */
+.product {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: black;
+}
+
+/* Order Form */
+form {
+    background-color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #160808;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: rgb(10, 4, 4);
+    color: rgb(246, 240, 240);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #080505;
+}
+
+/* Contact Page */
+section p {
+    font-size: 18px;
+    margin: 10px 0;
+}

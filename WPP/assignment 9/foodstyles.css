@@ -1,0 +1,226 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f3f8;
+    text-align: center;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ff4d4d;
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #ff4d4d;
+    border-radius: 5px;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: url('images/food-bg.jpg') no-repeat center center/cover;
+}
+
+.hero h2 {
+    font-size: 90px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: #ff4d4d;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff4d4d;
+    color: white;
+}
+
+.FOOD-GALLERY {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.FOOD-ITEMS img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Menu Page */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Order Page */
+.order-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.order-form h2 {
+    text-align: center;
+    color: #ff4d4d;
+}
+
+.order-form label { 
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.order-form input,
+.order-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form input[type="submit"] {
+    margin-top: 15px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.order-form input[type="submit"]:hover {
+    background: #d63030;
+}
+
+/* Contact Page */
+.contact-info {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #ff4d4d;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .order-form {
+        width: 90%;
+    }
+
+    .contact-info {
+        width: 90%;
+    }
+}

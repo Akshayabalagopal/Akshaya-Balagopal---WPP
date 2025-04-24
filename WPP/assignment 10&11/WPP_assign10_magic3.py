@@ -1,3 +1,8 @@
+'''3. A magic square is an N×N grid of numbers in which the
+entries in each row, column and main diagonal sum to the
+same number (equal to N(N^2+1)/2). Create a magic square
+for N=4, 5, 6, 7, 8
+'''
 import numpy as np
 
 # Function to generate magic square for odd n using the Siamese method

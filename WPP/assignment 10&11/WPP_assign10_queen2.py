@@ -1,3 +1,8 @@
+'''2. Write a program to place the queens randomly in the chess
+board so that all the conditions are satisfied. Find the
+solutions to the problem. (4, 1 3 0 2)
+'''
+
 import numpy as np
 import random
 

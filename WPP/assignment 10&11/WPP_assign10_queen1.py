@@ -1,3 +1,11 @@
+'''1. Consider the 8 queen's problem, it is a 8*8 chess board
+where you need to place queens according to the following
+constraints.
+a. Each row should have exactly only one queen.
+b. Each column should have exactly only one queen.
+c. No queens are attacking each other.
+'''
+
 import numpy as np
 
 # Check if it's safe to place a queen at (row, col)
